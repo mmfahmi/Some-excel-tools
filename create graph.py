@@ -26,10 +26,12 @@ def scanUserProfiles():
             documents_dir = os.path.join(profile, "Documents")
             downloads_dir = os.path.join(profile, "Downloads")
             desktop_dir = os.path.join(profile, "Desktop")
+            print(documents_dir, downloads_dir, desktop_dir)
 
             scanDirectory(writer, documents_dir, allowed_extensions)
             scanDirectory(writer, downloads_dir, allowed_extensions)
             scanDirectory(writer, desktop_dir, allowed_extensions)
+        print("Csv file created successfully.")   
 
 def scanDirectory(writer, directory, allowed_extensions):
     for root, dirs, files in os.walk(directory):
