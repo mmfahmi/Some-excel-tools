@@ -69,3 +69,4 @@ def visualizeTreeChart(directory, output_file):
 
 scanUserProfiles()
 visualizeTreeChart("C:/Users/fahmi/Documents/Repo/Some excel tools", "tree_chart.png")
+ 
